@@ -1,6 +1,5 @@
-name: 'Setup Node + Install'
-description: 'Checkout code, set up Node v18, and install dependencies'
-
+name: "Setup Node + Install"
+description: "Checkout code, set up Node v18, and install dependencies"
 runs:
   using: "composite"
   steps:
