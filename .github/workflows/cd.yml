@@ -8,12 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4 
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-      - run: npm install typescript
-        shell: bash
-      - run: npm rum build
+      - uses: actions/checkout@v4
+      - name: Common Setup
+        uses: ./.github/actions/setup-node
+      - run: npm run build
         shell: bash
