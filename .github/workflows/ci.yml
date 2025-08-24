@@ -26,3 +26,5 @@ jobs:
         uses: ./.github/actions/setup-node
       - name: Check format
         run: npm run format:check
+      - name: Perform linting
+        run: npm run lint
